@@ -1,0 +1,12 @@
+<h1>New Product</h1>
+
+
+<%= form_for @products do |i| %>
+    <div>
+        <%=i.label :Product_name %>
+        <%=i.text_field :Product_name %>
+        <%=i.label :Product_price %>
+        <%=i.number_field :Product_price %><br>
+    </div>
+    <%= form.submit %>
+<% end %>

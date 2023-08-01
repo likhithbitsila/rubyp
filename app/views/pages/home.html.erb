@@ -1,0 +1,9 @@
+<h1>Products Available</h1>
+
+<div>
+    <% @products.each_with_index  do |i,y|%>
+    <h3><a href="details/<%= y+1%>"> <%= i.title%>
+    </a></h3>
+    <%# <%= link_to "details/:y+1" , details_path %>
+    <%end%>
+</div>
